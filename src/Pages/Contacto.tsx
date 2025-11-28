@@ -1,11 +1,11 @@
 import React from 'react';
 import Navbar from '../Components/Navbar';
-import { MessageCircle, Mail, Instagram, Music, Clock, CreditCard } from 'lucide-react';
+import { MessageCircle, Mail, Instagram, Clock, CreditCard } from 'lucide-react';
 
 const Contacto: React.FC = () => {
   const whatsappLink = "https://wa.me/52XXXXXXXXXX?text=Hola%20vengo%20desde%20la%20página,%20quiero%20más%20información";
   const instagramLink = "https://instagram.com/panhub";
-  const tiktokLink = "https://tiktok.com/@panhub";
+  // const tiktokLink = "https://tiktok.com/@panhub";
 
   const contactMethods = [
     {
@@ -38,20 +38,18 @@ const Contacto: React.FC = () => {
       color: 'bg-gradient-to-br from-purple-600 to-pink-600'
     },
     {
-      icon: <Music size={40} />,
-      name: 'TikTok',
+      icon: <MessageCircle size={40} />,
+      name: 'WahtsApp',
       handle: '@panhub',
-      description: 'Videos y promociones especiales',
-      link: tiktokLink,
+      description: 'Contacto directo y rápido vía WhatsApp',
+      link: whatsappLink,
       color: 'bg-black'
     }
   ];
 
   const paymentMethods = [
     'Efectivo',
-    'Transferencia bancaria',
-    'SPEI',
-    'Tarjeta (previa coordinación)'
+    'Transferencia bancaria'
   ];
 
   return (

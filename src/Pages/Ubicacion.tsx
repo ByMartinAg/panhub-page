@@ -6,11 +6,11 @@ const Ubicacion: React.FC = () => {
   const whatsappLink = "https://wa.me/52XXXXXXXXXX?text=Hola%20vengo%20desde%20la%20página,%20quiero%20más%20información";
 
   const schedule = [
-    { day: 'Lunes', hours: '9:00 - 14:00' },
-    { day: 'Martes', hours: '9:00 - 14:00' },
-    { day: 'Miércoles', hours: '9:00 - 14:00' },
-    { day: 'Jueves', hours: '9:00 - 14:00' },
-    { day: 'Viernes', hours: '9:00 - 14:00' },
+    { day: 'Lunes', hours: '14:00 - 18:00' },
+    { day: 'Martes', hours: '14:00 - 19:00' },
+    { day: 'Miércoles', hours: '14:00 - 19:00' },
+    { day: 'Jueves', hours: '14:00 - 18:00' },
+    { day: 'Viernes', hours: '14:00 - 19:00' },
     { day: 'Sábado', hours: 'Cerrado' },
     { day: 'Domingo', hours: 'Cerrado' }
   ];
@@ -23,7 +23,7 @@ const Ubicacion: React.FC = () => {
       <section className="bg-gradient-to-br from-amber-600 to-orange-600 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Navigation className="mx-auto mb-4 text-white" size={64} />
-          <h2 className="text-4xl font-bold text-white mb-4">Encuéntranos en el campus</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">Encuéntranos en la universidad</h2>
           <p className="text-xl text-white">Visítanos y prueba nuestro pan fresco</p>
         </div>
       </section>
@@ -40,11 +40,11 @@ const Ubicacion: React.FC = () => {
                   <div>
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">Nuestra ubicación</h3>
                     <p className="text-lg text-gray-700">
-                      Estamos ubicados en el <span className="font-semibold">Edificio Principal</span>, 
-                      cerca de la <span className="font-semibold">Cafetería Central</span>.
+                      Estamos ubicados en el <span className="font-semibold">Edificio Principal de Sistemas</span>, 
+                      cerca de la <span className="font-semibold">Velaria a un lado de la Papeleria</span>.
                     </p>
                     <p className="text-gray-600 mt-2">
-                      Búscanos en el área de descanso del segundo piso.
+                      Búscanos en el salon N-04.
                     </p>
                   </div>
                 </div>
@@ -84,17 +84,25 @@ const Ubicacion: React.FC = () => {
 
             {/* Map Image */}
             <div>
-              <div className="bg-gray-200 rounded-lg shadow-lg overflow-hidden h-full min-h-96">
-                <img 
-                  src="/src/images/campus-map.png" 
-                  alt="Mapa del campus" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <p className="text-center text-gray-600 mt-4 text-sm">
-                Mapa del campus - Ubicación de PanHub marcada
-              </p>
-            </div>
+  <div className="bg-gray-200 rounded-lg shadow-lg overflow-hidden h-full min-h-96">
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d621.1910066682035!2d-99.8010339363195!3d19.67558515401067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2smx!4v1764316024753!5m2!1ses-419!2smx"
+      width="100%"
+      height="100%"
+      style={{ border: 0 }}
+      loading="lazy"
+      allowFullScreen
+      referrerPolicy="no-referrer-when-downgrade"
+      className="w-full h-full"
+    ></iframe>
+
+  </div>
+
+  <p className="text-center text-gray-600 mt-4 text-sm">
+    Mapa del campus — Ubicación de PanHub marcada
+  </p>
+</div>
           </div>
         </div>
       </section>
@@ -118,7 +126,7 @@ const Ubicacion: React.FC = () => {
                   2
                 </div>
                 <p className="text-gray-700 text-lg">
-                  Dirígete al Edificio Principal (frente a la plaza central)
+                  Dirígete al Edificio Principal de sistemas (Edificio N,a un lado de la Papeleria)
                 </p>
               </div>
               <div className="flex items-start">
@@ -126,7 +134,7 @@ const Ubicacion: React.FC = () => {
                   3
                 </div>
                 <p className="text-gray-700 text-lg">
-                  Sube al segundo piso por las escaleras junto a la Cafetería
+                  Planta baja busca el salón N-04
                 </p>
               </div>
               <div className="flex items-start">
@@ -134,7 +142,7 @@ const Ubicacion: React.FC = () => {
                   4
                 </div>
                 <p className="text-gray-700 text-lg">
-                  ¡Nos encontrarás en el área de descanso!
+                  ¡Nos encontrarás en el aula durante los horarios establecidos!
                 </p>
               </div>
             </div>

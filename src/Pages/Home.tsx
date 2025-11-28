@@ -7,15 +7,15 @@ const Home: React.FC = () => {
   const whatsappLink = "https://wa.me/52XXXXXXXXXX?text=Hola%20vengo%20desde%20la%20página,%20quiero%20más%20información";
 
   const featuredProducts = [
-    { name: 'Mini Conchas', price: '$10', image: '/src/images/mini-conchas.jpg' },
-    { name: 'Pan de Nata', price: '$15', image: '/src/images/pan-nata.jpg' },
-    { name: 'Roles', price: '$12', image: '/src/images/roles.jpg' }
+    { name: 'Pan de nata relleno', price: '$30', image: '/src/images/pan-de-nata-relleno.png' },
+    { name: 'Pan de Nata', price: '$20', image: '/src/images/pan-de-nata.png' },
+    { name: 'Mini panques', price: '$20', image: '/src/images/mini-panques.png' }
   ];
 
   const bakeries = [
-    { name: 'Panadería La Esquina', specialty: 'Conchas artesanales', image: '/src/images/bakery1.jpg' },
-    { name: 'Pan del Valle', specialty: 'Pan dulce tradicional', image: '/src/images/bakery2.jpg' },
-    { name: 'Horno Dorado', specialty: 'Roles y cuernitos', image: '/src/images/bakery3.jpg' }
+    { name: 'Panadería La Esquina', specialty: 'Pan en formato mini', image: '/src/images/bakery1.jpg' },
+    { name: 'Panadería Espiga de Oro', specialty: 'Mini panques y galletas', image: '/src/images/bakery2.jpg' },
+    { name: 'Panadería Chimal Reyes', specialty: 'Pan de nata', image: '/src/images/bakery3.jpg' }
   ];
 
   return (
@@ -29,8 +29,11 @@ const Home: React.FC = () => {
             <h2 className="text-5xl font-extrabold text-gray-900 mb-4">
               Pan artesanal y práctico para tu día a día
             </h2>
+            <h2 className='text-5xl font-extrabold text-gray-900 mb-4'>
+                Formato mini, sabor maxi.
+            </h2>
             <p className="text-xl text-gray-700 mb-8">
-              Conectamos panaderías locales con tu campus
+              Conectamos panaderías locales para llevar el mejor pan fresco directamente a ti
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 

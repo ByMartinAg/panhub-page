@@ -7,60 +7,61 @@ const Productos: React.FC = () => {
 
   const products = [
     {
-      name: 'Mini Conchas',
-      price: '$10',
-      description: 'Mini conchas esponjosas con topping de chocolate y vainilla',
-      image: '/src/images/mini-conchas.jpg'
-    },
-    {
       name: 'Pan de Nata',
+      price: '$20',
+      description: 'Pan tradicional suave y mantequilloso, hecho de manera artesanal y perfecto para un antojo rápido dentro del campus.',
+      image: '/src/images/pan-de-nata.png'
+    },
+    {
+      name: 'Pan de Nata Relleno',
       price: '$15',
-      description: 'Pan suave relleno de deliciosa crema de nata',
-      image: '/src/images/pan-nata.jpg'
+      description: 'Pan de nata artesanal con relleno dulce —nutella— pensado para quienes buscan algo más indulgente pero práctico.',
+      image: '/src/images/pan-de-nata-relleno.png'
     },
     {
-      name: 'Roles',
+      name: 'Mini Panques',
       price: '$12',
-      description: 'Roles esponjosos con canela y azúcar',
-      image: '/src/images/roles.jpg'
+      description: 'Panqués individuales en sabor chocolate, esponjosos y listos para llevar como snack o desayuno rápido.',
+      image: '/src/images/mini-panques.png'
     },
     {
-      name: 'Cuernitos',
+      name: 'Muffins',
       price: '$13',
-      description: 'Cuernitos hojaldrados con mantequilla',
-      image: '/src/images/cuernitos.jpg'
+      description: 'Muffins artesanales de textura suave, disponibles en variedades como blueberry y chocolate, ideales como snack energético.',
+      image: '/src/images/muffin.png'
     },
     {
-      name: 'Donas Glaseadas',
+      name: 'Galletas',
       price: '$14',
-      description: 'Donas suaves con glaseado de chocolate o fresa',
-      image: '/src/images/donas.jpg'
+      description: 'Galletas artesanales crujientes, hechas con ingredientes frescos y pensadas para acompañar el ritmo de vida universitario.',
+      image: '/src/images/galletas.png'
     },
     {
-      name: 'Pan Integral',
+      name: 'Mini Cuernitos',
       price: '$18',
-      description: 'Pan integral saludable con semillas',
-      image: '/src/images/pan-integral.jpg'
+      description: 'Cuernitos pequeños de mantequilla, suaves y ligeramente dorados, perfectos para acompañar un café o para un break rápido',
+      image: '/src/images/cuernitos.png'
     }
+
   ];
 
   const combos = [
     {
-      name: 'Combo Estudiante',
-      price: '$35',
-      includes: '2 piezas de pan + bebida',
+      name: 'Combo 1',
+      price: '$??',
+      includes: 'Proximamente disponible...',
       image: '/src/images/combo-estudiante.jpg'
     },
     {
-      name: 'Combo Recreo',
-      price: '$50',
-      includes: '3 piezas de pan + bebida + fruta',
+      name: 'Combo 2',
+      price: '$??',
+      includes: 'Proximamente disponible...',
       image: '/src/images/combo-recreo.jpg'
     },
     {
-      name: 'Combo Grupo',
-      price: '$120',
-      includes: '10 piezas variadas',
+      name: 'Combo 3',
+      price: '$??',
+      includes: 'Proximamente disponible...',
       image: '/src/images/combo-grupo.jpg'
     }
   ];

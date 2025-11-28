@@ -4,12 +4,12 @@ import { Heart, Users, TrendingUp, Award } from 'lucide-react';
 
 const Experiencia: React.FC = () => {
   const gallery = [
-    { image: '/src/images/gallery1.jpg', alt: 'Pan fresco' },
-    { image: '/src/images/gallery2.jpg', alt: 'Empaques' },
-    { image: '/src/images/gallery3.jpg', alt: 'Stand en campus' },
-    { image: '/src/images/gallery4.jpg', alt: 'Equipo de trabajo' },
-    { image: '/src/images/gallery5.jpg', alt: 'Productos variados' },
-    { image: '/src/images/gallery6.jpg', alt: 'Clientes satisfechos' }
+    { image: '/src/images/galeria1.png', alt: 'Pan fresco' },
+    { image: '/src/images/galeria2.png', alt: 'Empaques' },
+    { image: '/src/images/galeria3.png', alt: 'Especiales' },
+    //{ image: '/src/images/gallery4.jpg', alt: 'Equipo de trabajo' },
+    //{ image: '/src/images/gallery5.jpg', alt: 'Productos variados' },
+    //{ image: '/src/images/gallery6.jpg', alt: 'Clientes satisfechos' }
   ];
 
   const distinctions = [
